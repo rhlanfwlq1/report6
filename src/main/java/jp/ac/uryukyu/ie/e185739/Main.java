@@ -78,6 +78,17 @@ class BaseBall{
                     }
                 }
             }
+            //もしstrike,ball 誰も合わせなかったら
+            if(strike == 0 && ball==0){
+                System.out.println("\nOUT!!\n");
+            }else if(strike == 3){ //もしストライク3つなら
+                System.out.print("\nSTRIKE!!");
+                System.exit(0);
+            }else{
+                System.out.println("\n"+strike+" STRIKE"+ball+" BALL\n");
+                strike=0;
+                ball=0;
+            }
 
 
 
