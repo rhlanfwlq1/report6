@@ -58,6 +58,27 @@ class BaseBall{
                     user[i] = s.nextInt();
                 }
             }
+            //結果チェック
+
+            //strike,ballチェック
+            for(int i = 0; i< 3; i++){
+                for(int j=0; j<3; j++){
+
+                    //コンピューター定価
+                    //ユーザーが決めた値なら
+                    if(computer[i] == user[j]){
+                        //computer i番目と
+                        //user j番目なら
+                        //ストライク!
+                        if(i==j){
+                            strike+=1;
+                        }else{  //違うとボール!
+                            ball+=1;
+                        }
+                    }
+                }
+            }
+
 
 
         }
